@@ -14,8 +14,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
-        shouldEnableDarkMode(DarkModeConfig.FOLLOW_SYSTEM)
-
         checkbox_daynight.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) shouldEnableDarkMode(DarkModeConfig.YES)
             else shouldEnableDarkMode(DarkModeConfig.NO)
